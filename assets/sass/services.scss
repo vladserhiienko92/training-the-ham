@@ -1,0 +1,98 @@
+/* ===================================================>
++                   Services Styles                   +
+<=================================================== */
+
+#services {
+	padding-top: 92px;
+}
+
+.services-menu {
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.services-list {
+	list-style-type: none;
+	font-size: 0;
+	li {
+		position: relative;
+		display: inline-block;
+		width: 16.6666666%;
+		height: 72px;
+		line-height: 72px;
+		font-size: 16px;
+		color: #717171;
+		border: 1px solid #ebebeb;
+		border-right: 0;
+		background: #f8fcfe;
+		cursor: pointer;
+		&:last-child {
+			border-right: 1px solid #ebebeb;
+		}
+		&:hover {
+			background: $color_green;
+			border: 1px solid $color_green;
+			border-right: 0;
+			color: $color_white;
+			&:last-child {
+				border-right: 1px solid $color_green;
+			}
+			&:after {
+				position: absolute;
+				bottom: -10px;
+				left: 45%;
+				content: "";
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-top: 10px solid $color_green;
+			}
+		}
+	}
+	.active {
+	background: $color_green;
+	border: 1px solid $color_green;
+	border-right: 0;
+	color: $color_white;
+	&:last-child {
+		border-right: 1px solid $color_green;
+	}
+	&:after {
+		position: absolute;
+		bottom: -10px;
+		left: 45%;
+		content: "";
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid $color_green;
+	}
+}
+}
+
+.services-tab {
+	margin-bottom: 100px;
+}
+
+.services-content {
+	display: none;
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	p {
+		font: 13.6px 'Montserrat-Light';
+		line-height: 23px;
+		display: inline-block;
+		vertical-align: middle;
+		width: 80%;
+		text-align: justify;
+		margin-left: 16px;
+	}
+}
+
+.active {
+	display: block;
+}

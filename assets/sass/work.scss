@@ -1,0 +1,146 @@
+/* ===================================================>
++                     Work Styles                     +
+<=================================================== */
+
+#work {
+	padding-top: 92px;
+	background: #f8fcfe;
+	border-bottom: 1px solid #e1e1e1;
+	.subheader {
+		margin-bottom: 102px;
+	}
+}
+
+.buttons-group {
+	text-align: center;
+	margin-bottom: 70px;
+	ul {
+		list-style-type: none;
+		font-size: 0;
+	}
+}
+
+.buttons-group_link {
+	position: relative;
+	display: inline-block;
+	padding: 23px 22px 19px;
+	border: 1px solid #ebebeb;
+	border-right: 0;
+	font-size: 14px;
+	color: #717171;
+	background: $color_white;
+	cursor: pointer;
+	&:last-child {
+		border-right: 1px solid #ebebeb;
+	}
+	&:hover {
+		color: $color_green;
+		&:after {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: 0;
+			display: inline-block;
+			width: 100.5%;
+			height: 2px;
+			background: $color_green;
+			z-index: 5;
+		}
+	}
+}
+
+
+.isotope-grid {
+	font-size: 0;
+	margin-bottom: 62px;
+	.isotope-item {
+		position: relative;
+		display: inline-block;
+		width: 25%;
+		height: 208px;
+		cursor: pointer;
+		&:nth-child(odd) {
+			background: #24413e;
+		}
+		&:nth-child(even) {
+			background: #8a8a8a;
+		}
+		&:nth-child(2n+5) {
+			background: #8a8a8a;
+		}
+		&:nth-child(2n+6) {
+			background: #24413e;
+		}
+		&:nth-child(2n+9) {
+			background: #24413e;
+		}
+		&:nth-child(2n+10) {
+			background: #8a8a8a;
+		}
+	}
+}
+
+.isotope-item_mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 43px;
+	text-align: center;
+	background: #f8fcfe;
+	border: 1px solid #f0f4f5;
+	border-top: 2px solid $color_green;
+	a {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border: 1px solid $color_green;
+		-webkit-border-radius: 50%;
+	    border-radius: 50%;
+		color: $color_green;
+		font-size: 15px;
+		&:hover {
+			background: $color_green;
+			color: $color_white;
+			@extend .transition;
+		}
+		&:first-child {
+			margin-right: 3px;
+		}
+		&:last-child {
+			margin-left: 3px;
+		}
+	}
+	h4 {
+		font: 14px 'Montserrat-Bold';
+		text-transform: uppercase;
+		color: $color_green;
+		margin-bottom: 15px;
+	}
+	p {
+		font: 12px 'Montserrat-Light';
+		color: #8a8a8a;
+	}
+}
+
+.isotope-buttons {
+	margin-bottom: 30px;
+}
+
+.work-button {
+	text-align: center;
+	padding-bottom: 100px;
+	.button-plus {
+		display: inline-block;
+		font-size: 19px;
+		padding-right: 15px;
+		vertical-align: middle;
+	}
+	a {
+		@include button($color_green);
+	}
+}

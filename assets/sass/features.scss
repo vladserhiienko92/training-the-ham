@@ -1,0 +1,74 @@
+/* ===================================================>
++                   Features Styles                   +
+<=================================================== */
+
+#features {
+	margin-bottom: 94px;
+}
+
+.features-row1 {
+	margin-bottom: 58px;
+}
+
+.features-row2 {
+	margin-bottom: 64px;
+}
+
+.features-item {
+	h4 {
+		padding-left: 46px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		margin-bottom: 5px;
+		a {
+			font: 18px 'Montserrat-Bold';
+			color: #717171;
+			text-decoration: none;
+			&:hover {
+				color: $color_green;
+				@extend  .transition;
+			}
+		}
+	}
+	p {
+		font: $text_size 'Montserrat-Light';
+		line-height: 25px;
+		color: #777777;
+	}
+}
+
+.features-img1 {
+	background: url(../img/features1.svg) no-repeat left center;
+}
+
+.features-img2 {
+	background: url(../img/features2.svg) no-repeat left center;
+}
+
+.features-img3 {
+	background: url(../img/features3.svg) no-repeat left center;
+}
+
+.features-img4 {
+	background: url(../img/features4.svg) no-repeat left center;
+}
+
+.features-img5 {
+	background: url(../img/features5.svg) no-repeat left center;
+}
+
+.features-img6 {
+	background: url(../img/features6.svg) no-repeat left center;
+}
+
+.features-img7 {
+	background: url(../img/features7.svg) no-repeat left center;
+}
+
+.features-img8 {
+	background: url(../img/features8.svg) no-repeat left center;
+}
+
+.features-img9 {
+	background: url(../img/features9.svg) no-repeat left center;
+}

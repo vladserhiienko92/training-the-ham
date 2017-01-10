@@ -1,0 +1,172 @@
+/* ===================================================>
++                   About Us Styles                   +
+<=================================================== */
+
+#about {
+	position: relative;
+	background: #090f14;
+	min-height: 676px;
+	padding-top: 93px;
+	.subheader {
+		font-family: 'Montserrat-Light';
+		color: $color_white;
+		text-align: left;
+    	letter-spacing: 0.3px;
+    	margin-bottom: 114px;
+	}
+}
+
+.about-img {
+	width: 45%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.about-tab_nav {
+	margin-bottom: 61px;
+	li {
+		display: inline-block;
+		margin-right: 16px;
+		position: relative;
+		font: 16px 'Montserrat-Bold';
+		color: $color_white;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover {
+			color: $color_green;
+			&:after {
+				content: "";
+				position: absolute;
+				top: -10px;
+				left: 0;
+				display: inline-block;
+				width: 100%;
+				height: 2px;
+				background: $color_green;
+			}
+		}
+	}
+	.active {
+		color: $color_green;
+		&:after {
+			content: "";
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+			background: $color_green;
+		}
+	}
+}
+
+.about-tab_history {
+	display: none;
+	p {
+		font: $text_size 'Montserrat-Light';
+		color: $text_color;
+		line-height: 25px;
+		margin-bottom: 50px;
+	}
+}
+
+.tab-history_list {
+	display: inline-block;
+	list-style-type: none;
+	&:last-child {
+		margin-left: 60px;
+	}
+	li {
+		vertical-align: middle;
+		font: $text_size 'Montserrat-Light';
+		color: $text_color;
+		margin-bottom: 14px;
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 23px;
+			height: 23px;
+			margin-right: 15px;
+			vertical-align: middle;
+			background: url(../img/list-image.png);
+		}
+	}
+}
+
+.about-tab_bio {
+	display: none;
+	p {
+		font: $text_size 'Montserrat-Light';
+		color: $text_color;
+		line-height: 25px;
+		&:first-child {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.about-tab_skills {
+	display: none;
+	.tab-skills {
+		position: relative;
+		width: 100%;
+		height: 39px;
+		border: 1px solid #959595;
+		-webkit-border-radius: 4px;
+		        border-radius: 4px;
+		margin-bottom: 14px;
+		padding-left: 17px;
+		span {
+			position: relative;
+			z-index: 5;
+			font-size: 13px;
+			line-height: 39px;
+			text-transform: uppercase;
+			color: $color_white;
+		}
+	}
+	.active {
+		display: block;
+	}
+}
+
+.skillbar-bar {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	z-index: 1;
+	height: 39px;
+	line-height: 39px;
+	-webkit-border-radius: 4px;
+		    border-radius: 4px;
+	width: 0px;
+	background: #6adcfa;
+	display: inline-block;
+}
+
+.tab-skills_user {
+	background: #9c5da5;
+}
+
+.tab-skills_design {
+	background: #11b0de;
+}
+
+.tab-skills_wordpress {
+	background: #d67f7f;
+}
+
+.tab-skills_html {
+	background: #20bc9d;
+}
+
+.tab-skills_app {
+	background: #bb8a36;
+}
+
+.active {
+	display: block;
+}

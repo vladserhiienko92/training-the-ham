@@ -1,0 +1,161 @@
+/* =================================================>
++                    Main Styles                    +
+<================================================= */
+
+/* ------------------> Variables <----------------- */
+
+$color_white: #fff;
+$color_green: #18cfab;
+$menu_size: 13px;
+$bg_color_header: #92918c;
+$color_menu: #b8b8b8;
+$bg_slider: #3c3c3c;
+$color_grey: #d4d4d4;
+$subheader_size: 36px;
+$subheader_color: #4e4e4e;
+$text_size: 14px;
+$text_color: #bebebe;
+
+/* ------------------> Mixins <----------------- */
+
+@mixin buttons() {
+	display: inline-block;
+    width: 165px;
+    height: 65px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+@mixin button($color_bg) {
+	display: inline-block;
+    width: 165px;
+    height: 60px;
+    font-family: 'Montserrat-Bold';
+    font-size: 13px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: $color_bg;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 5px;
+    &:hover {
+    	background: #d8d8d8;
+	    color: #40474b;
+	    -webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    -ms-transition: all .3s ease-in-out;
+	    -o-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
+    }
+}
+
+/* ------------------> General <----------------- */
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: 'Montserrat-Regular';
+}
+
+.clearfix {
+	clear: both;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.subheader {
+	font-family: 'Montserrat-Light';
+	font-size: $subheader_size;
+	color: $subheader_color;
+	text-align: center;
+	letter-spacing: -0.2px;
+	margin-bottom: 100px;
+	span {
+		background: url(../img/shapes.png) no-repeat center 70px;
+		padding-bottom: 100px;
+	} 
+}
+
+.transition {
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+	    -ms-transition: all .4s ease-in-out;
+	     -o-transition: all .4s ease-in-out;
+	        transition: all .4s ease-in-out;
+}
+
+/* -------------------> Fonts <------------------ */
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src:
+		url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Bold.otf')  format('opentype'),
+		url('../fonts/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/Montserrat-Bold.ttf')  format('truetype'),
+		url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src:
+		url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Regular.otf')  format('opentype'),
+		url('../fonts/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/Montserrat-Regular.ttf')  format('truetype'),
+		url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Light';
+	src:
+		url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Light.otf')  format('opentype'),
+		url('../fonts/Montserrat-Light.woff') format('woff'),
+		url('../fonts/Montserrat-Light.ttf')  format('truetype'),
+		url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ------------------> Imports <----------------- */
+
+@import "header.scss";
+@import "home.scss";
+@import "blocks.scss";
+@import "features.scss";
+@import "about.scss";
+@import "work.scss";
+@import "services.scss";
+@import "purchase.scss";
+@import "news.scss";
+@import "fact.scss";
+@import "pricing.scss";
+@import "feedback.scss";
+@import "team.scss";
+@import "purchases.scss";
+@import "contact.scss";
+@import "footer.scss";

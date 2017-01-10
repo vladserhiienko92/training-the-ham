@@ -1,0 +1,297 @@
+/* ===================================================>
++                    Home Styles                    +
+<=================================================== */
+
+/* --------------------> Slider <------------------- */
+
+.slide {
+	position: relative;
+	min-height: 1012px;
+	background: $bg_slider;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	text-align: center;
+	z-index: 1;
+	&:focus {
+		border: none;
+		outline: 0;
+	}
+	h3 {
+		font-family: 'Montserrat-Bold';
+		font-size: 35px;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+		color: $color_white;
+		padding-top: 358px;
+		margin: 0;
+		span {
+			color: $color_green;
+		}
+	}
+	h1 {
+		font-family: 'Montserrat-Bold';
+		font-size: 79px;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		color: $color_white;
+		padding-top: 21px;
+		margin: 0;
+	}
+	.slide-text {
+		font-family: 'Montserrat-Light';
+		font-size: 34px;
+		letter-spacing: -0.2px;
+		color: $color_grey;
+		padding-top: 14px;
+		margin: 0;
+		margin-bottom: 141px;
+	}
+	.explore-now {
+		@include buttons;
+		margin: 0;
+		margin-right: 12px;
+		a {
+			@include button(#18cfab);
+		}
+	}
+
+	.purchase-now {
+		@include buttons;
+		margin: 0;
+		margin-left: 12px;
+		a {
+			@include button(#00cbf6);
+		}
+	}
+}
+
+.first-slide {
+	background-image: url(../img/wallpaper1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.second-slide {
+	background-image: url(../img/wallpaper2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+
+.third-slide {
+	background-image: url(../img/wallpaper3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+
+.preview-slide {
+	position: absolute;
+	top: 705px;
+	right: 9%;
+	width: 171px;
+	height: 105px;
+	text-align: center;
+	z-index: 9;
+	display: none;
+	border: 1px solid rgba(0, 0, 0, .3);
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	padding: 5px;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	h3 {
+		font-family: 'Montserrat-Bold';
+		font-size: 9px;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+		color: $color_white;
+		margin: 0;
+		margin-bottom: 3px;
+		span {
+			color: $color_green;
+		}
+	}
+	h1 {
+		font-family: 'Montserrat-Bold';
+		font-size: 14px;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		color: $color_white;
+		margin: 0;
+		margin-bottom: 3px;
+	}
+	.slide-text {
+		font-family: 'Montserrat-Light';
+		font-size: 8px;
+		letter-spacing: -0.2px;
+		color: $color_grey;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.explore-now {
+		@include buttons;
+		margin: 0;
+		margin-right: 7px;
+		width: 50px;
+    	height: 25px;
+		a {
+			@include button(#18cfab);
+			width: 50px;
+    		height: 25px;
+    		font-size: 5px;
+    		line-height: 25px;
+    		margin-top: 2px;
+		}
+	}
+
+	.purchase-now {
+		@include buttons;
+		margin: 0;
+		margin-left: 7px;
+		width: 50px;
+    	height: 25px;
+		a {
+			@include button(#00cbf6);
+			width: 50px;
+    		height: 25px;
+    		font-size: 5px;
+    		line-height: 25px;
+    		margin-top: 2px;
+		}
+	}
+}
+
+.home-slider {
+	.slick-prev.slick-arrow {
+		position: absolute;
+		top: 81.6%;
+		left: 78.3%;
+		width: 63px;
+		height: 63px;
+		background: #3c4140;
+		border: none;
+		outline: 0;
+		font-size: 0;
+		line-height: 0;
+		cursor: pointer;
+		z-index: 9;
+		@extend .transition;
+		&:before {
+			font-family: FontAwesome;
+			content: "\f053";
+			font-size: 24px;
+			line-height: 63px;
+			color: #878787;
+			text-align: center;
+		}
+		&:hover {
+			background: $color_green;
+			&:before {
+				color: $color_white;
+			}
+		}
+	}
+	.slick-next.slick-arrow {
+		position: absolute;
+		top: 81.6%;
+		right: 9%;
+		width: 63px;
+		height: 63px;
+		background: #3c4140;
+		border: none;
+		outline: 0;
+		font-size: 0;
+		line-height: 0;
+		cursor: pointer;
+		@extend .transition;
+		&:after {
+			font-family: FontAwesome;
+			content: "\f054";
+			font-size: 24px;
+			line-height: 63px;
+			color: #878787;
+			text-align: center;
+		}
+		&:hover {
+			background: $color_green;
+			&:after {
+				color: $color_white;
+			}
+		}
+	}
+}
+/* .slick-prev.slick-arrow {
+	position: absolute;
+	top: 81.6%;
+	left: 78.3%;
+	width: 63px;
+	height: 63px;
+	background: #3c4140;
+	border: none;
+	outline: 0;
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+	z-index: 9;
+	&:before {
+		font-family: FontAwesome;
+		content: "\f053";
+		font-size: 24px;
+		line-height: 63px;
+		color: #878787;
+		text-align: center;
+	}
+	&:hover {
+		background: $color_green;
+		@extend  .transition;
+		&:before {
+			color: $color_white;
+			@extend .transition;
+		}
+	}
+}
+
+.slick-next.slick-arrow {
+	position: absolute;
+	top: 81.6%;
+	right: 9%;
+	width: 63px;
+	height: 63px;
+	background: #3c4140;
+	border: none;
+	outline: 0;
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+	&:after {
+		font-family: FontAwesome;
+		content: "\f054";
+		font-size: 24px;
+		line-height: 63px;
+		color: #878787;
+		text-align: center;
+	}
+	&:hover {
+		background: $color_green;
+		@extend .transition;
+		&:after {
+			color: $color_white;
+			@extend .transition;
+		}
+	}
+}
+ */

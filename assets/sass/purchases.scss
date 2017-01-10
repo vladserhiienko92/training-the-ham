@@ -1,0 +1,64 @@
+/* ===================================================>
++                   Purchases Styles                  +
+<=================================================== */
+
+#purchases {
+	background: #233641;
+	position: relative;
+	padding-top: 166px;
+	padding-bottom: 215px;
+
+}
+
+.purchase-img {
+	position: absolute;
+	bottom: 32px;
+	left: 0;
+	width: 62%;
+}
+
+.purchase-head1 {
+	font: 51px 'Montserrat-Bold', sans-serif;
+	color: $color_white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: -0.3px;
+	margin-bottom: 7px;
+}
+
+.purchase-head2 {
+	font: 47px 'Montserrat-Regular', sans-serif;
+	color: $color_green;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: -0.3px;
+	margin-bottom: 100px;
+}
+
+.purchases-list {
+	list-style-type: none;
+	margin-bottom: 68px;
+	li {
+		vertical-align: middle;
+		font: $text_size 'Montserrat-Light';
+		color: $text_color;
+		margin-bottom: 12px;
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 23px;
+			height: 23px;
+			margin-right: 15px;
+			vertical-align: middle;
+			background: url(../img/list-image.png);
+		}
+	}
+}
+
+.purchases-button {
+	@include buttons();
+	a {
+		@include button($color_green);
+		text-align: center;
+	}
+}

@@ -1,0 +1,37 @@
+/* ===================================================>
++                   Purchase Styles                   +
+<=================================================== */
+
+#purchase {
+	background-color: #40474b;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 127px;
+	h2 {
+		font-family: 'Montserrat-Bold';
+		font-size: 40px;
+		letter-spacing: -0.5px;
+		color: #18cfab;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	.purchase-text {
+		font-family: 'Montserrat-Regular';
+		font-size: 16px;
+		letter-spacing: -0.1px;
+		color: #d8d8d8;
+		margin-bottom: 74px;
+	}
+}
+
+.purchase-block-button1 {
+	@include buttons();
+	.purchase-block-button2 {
+		@include button($color_green);
+		@extend .transition;
+		&:hover {
+			background: #d8d8d8;
+			color: #40474b;
+		}
+	}
+}

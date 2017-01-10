@@ -1,0 +1,144 @@
+/* ===================================================>
++                   Feedback Styles                   +
+<=================================================== */
+
+#feedback {
+	background: #2e404d url(../img/wallpaper4.jpg) no-repeat center;
+	text-align: center;
+	padding-top: 93px;
+	padding-bottom: 85px;
+	.subheader {
+		color: $color_white;
+		margin-bottom: 104px;
+	}
+	.brackets {
+		margin-bottom: 33px;
+	}
+}
+
+.feedback-slider {
+	.slick-prev.slick-arrow {
+		position: absolute;
+		top: 109.5%;
+    	left: 29%;
+		width: 31px;
+		height: 31px;
+		background: transparent;
+		border: 1px solid #bbbbbb;
+		outline: 0;
+		font-size: 0;
+		line-height: 0;
+		z-index: 9;
+		cursor: pointer;
+		@extend .transition;
+		&:before {
+			font-family: FontAwesome;
+			content: "\f053";
+			font-size: 12px;
+			line-height: 31px;
+			color: #878787;
+			text-align: center;
+		}
+		&:hover {
+			background: $color_green;
+			border: 1px solid $color_green;
+			&:before{
+				color: $color_white;
+			}
+		}
+	}
+	.slick-next.slick-arrow {
+		position: absolute;
+		top: 109.5%;
+    	right: 29%;
+		width: 31px;
+		height: 31px;
+		background: transparent;
+		border: 1px solid #bbbbbb;
+		outline: 0;
+		font-size: 0;
+		line-height: 0;
+		z-index: 9;
+		cursor: pointer;
+		@extend .transition;
+		&:after {
+			font-family: FontAwesome;
+			content: "\f054";
+			font-size: 12px;
+			line-height: 31px;
+			color: #878787;
+			text-align: center;
+		}
+		&:hover {
+			background: $color_green;
+			border: 1px solid $color_green;
+			&:after {
+				color: $color_white;
+			}
+		}
+	}
+}
+
+.feedback-slide {
+	padding-bottom: 20px;
+	 margin-bottom: 28px;
+	.feedback-text {
+		font: 16px/30px 'Montserrat-Light', sans-serif;
+		color: #bbbbbb;
+		margin-bottom: 33px;
+	}
+	.feedback-name {
+		font: 16px 'Montserrat-Bold', sans-serif;
+		color: $color_green;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	.feedback-title {
+		font: 13px 'Montserrat-Light', sans-serif;
+		color: #bbbbbb;
+		margin-bottom: 38px;
+	}
+	img {
+		width: 140px;
+		height: 140px;
+		margin: 0 auto;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		border: 3px solid $color_green;
+		-webkit-box-shadow: 0 0 0 10px rgba(43, 95, 98, .5);
+		        box-shadow: 0 0 0 10px rgba(43, 95, 98, .5);
+	}
+}
+
+.feedback-nav {
+	position: relative;
+	margin-left: 33%;
+}
+
+.nav-slide {
+	width: 12.8%!important;
+	padding: 20px;
+	&:focus {
+		border: none;
+		outline: 0;
+	}
+	img {
+		width: 58px;
+		height: 58px;
+		border: 1px solid rgba(43, 95, 98, .5);
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		-webkit-box-shadow: 0 0 0 4px rgba(43, 95, 98, .5);
+		        box-shadow: 0 0 0 4px rgba(43, 95, 98, .5);
+		cursor: pointer;
+		@extend .transition;
+		&:hover {
+			border: 1px solid $color_green;
+			-webkit-transform: translateY(-10px);
+			   -moz-transform: translateY(-10px);
+			    -ms-transform: translateY(-10px);
+			     -o-transform: translateY(-10px);
+			        transform: translateY(-10px);
+		}
+	}
+}

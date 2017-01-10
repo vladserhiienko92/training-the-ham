@@ -1,0 +1,97 @@
+/* ===================================================>
++                     Fact Styles                     +
+<=================================================== */
+
+#fact {
+	font-size: 0;
+	margin-bottom: 93px;
+}
+
+.fact-block {
+	display: inline-block;
+	width: 25%;
+	height: 375px;
+	text-align: center;
+	padding-top: 88px;
+	&:nth-child(odd) {
+		background-color: #25333c;
+		border-top: 7px solid $color_green;
+	}
+	&:nth-child(even) {
+		background-color: $color_green;
+		border-top: 7px solid #25333c;
+	}
+	.fact-img {
+		position: relative;
+		display: inline-block;
+		width: 110px;
+		height: 110px;
+		margin-bottom: 44px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+	}
+	.fact-green {
+			background-color: $color_green;
+			&:after {
+				content: "";
+				position: absolute;
+				top: -27.5px;
+				left: -27.5px;
+				display: inline-block;
+				width: 165px;
+				height: 165px;
+				border: 2px solid $color_green;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
+			}
+	}
+	.fact-blue {
+			background-color: #25333c;
+			&:after {
+				content: "";
+				position: absolute;
+				top: -27.5px;
+				left: -27.5px;
+				display: inline-block;
+				width: 165px;
+				height: 165px;
+				border: 2px solid #25333c;
+				-webkit-border-radius: 50%;
+				        border-radius: 50%;
+			}
+	}
+	.fact-image1 {
+		background-image: url(../img/fact-img1.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.fact-image2 {
+		background-image: url(../img/fact-img2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.fact-image3 {
+		background-image: url(../img/fact-img3.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.fact-image4 {
+		background-image: url(../img/fact-img4.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.fact-number {
+		font: 36px 'Montserrat-Regular';
+		color: $color_white;
+		margin-bottom: 11px;
+	}
+	.fact-text {
+		font: 18px 'Montserrat-Light';
+	}
+	.text-green {
+		color: $color_green;
+	}
+	.text-blue {
+		color: #25333c!important;
+	}
+}
